@@ -17,7 +17,8 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
     db.collection('User').insertOne({
         firstname: 'Sandy',
         lastname: 'Thakare',
-        completed: true
+        completed: false,
+        Age: 26
     }, (err, result) => {
         if(err) {
             return console.log('Unable to add collection', err);
