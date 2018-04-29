@@ -17,7 +17,7 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
     })
     .catch((err) => {
         console.log('Can not connected with db. Error JSON: ', JSON.stringify(err, undefined, 2));
-    })
+    });
 
     client.close();
 
