@@ -1,4 +1,5 @@
 
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const { mongoose } = require('./db/mongoose');
@@ -29,3 +30,5 @@ app.post('/user', (req, res) => {
 app.listen(3000, () => {
     console.log('app is listening on port 3000');
 });
+
+module.exports = {app};
