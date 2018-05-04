@@ -10,7 +10,6 @@ var app = express();
 app.use(bodyParser.json());
 
 app.post('/user', (req, res) => {
-
     var user = new User({
         personal : req.body.personal,
         address : req.body.address
