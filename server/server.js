@@ -23,7 +23,6 @@ app.post('/user', (req, res) => {
         console.log('Unable to add data due to following error: Error: ', JSON.stringify(err, undefined, 2));
         res.status(400).send(err);
     })
-
 });
 
 app.listen(3000, () => {
